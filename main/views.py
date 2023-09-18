@@ -8,7 +8,6 @@ from django.core import serializers
 
 # Create your views here.
 def show_main(request):
-    Products.objects.all().delete() 
     products = Product.objects.all()
 
     context = {
